@@ -21,7 +21,7 @@
     String categoria = request.getParameter("categoria");
 
     
-      try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/DAM2", "root", "Sirope1_");
+      try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dam2", "root", "Sirope1_");
            PreparedStatement preparedStatement = conn.prepareStatement("INSERT INTO ciclismo VALUES(?,?,?,?,?,?,?,?,?)")) {
 
         preparedStatement.setString(1, equipo);
